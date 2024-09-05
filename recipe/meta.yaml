@@ -1,13 +1,13 @@
 {% set name = "xarray-tensorstore" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xarray-tensorstore-{{ version }}.tar.gz
-  sha256: 2ee6f164c9f1bc43328245b8d06c21863204fcd4e6159ddd6d8867c313c1d9b4
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: de3558c08891c4a7524cf579cb271d6cc005962efd1b8601dd679b58b13a68c8
 
 build:
   noarch: python
