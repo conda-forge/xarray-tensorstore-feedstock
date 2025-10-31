@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "xarray-tensorstore" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0b0c499e5ac61a0753633208add959bc319d3e2daf16d7ef1d68308d21137d85
+  sha256: 3f01a8182b2d09b6e9a365b206a648fd0bbbb0dd6b676b3b86864f8e52d5495e
 
 build:
   noarch: python
